@@ -1,0 +1,10 @@
+C:\Users\user\Documents\GitHub\WhatWatch\WhatWatch\WhatWatch\bin\Debug\WhatWatch.exe.config
+C:\Users\user\Documents\GitHub\WhatWatch\WhatWatch\WhatWatch\bin\Debug\WhatWatch.exe
+C:\Users\user\Documents\GitHub\WhatWatch\WhatWatch\WhatWatch\bin\Debug\WhatWatch.pdb
+C:\Users\user\Documents\GitHub\WhatWatch\WhatWatch\WhatWatch\obj\Debug\WhatWatch.csprojAssemblyReference.cache
+C:\Users\user\Documents\GitHub\WhatWatch\WhatWatch\WhatWatch\obj\Debug\WhatWatch.WhatWatch.resources
+C:\Users\user\Documents\GitHub\WhatWatch\WhatWatch\WhatWatch\obj\Debug\WhatWatch.Properties.Resources.resources
+C:\Users\user\Documents\GitHub\WhatWatch\WhatWatch\WhatWatch\obj\Debug\WhatWatch.csproj.GenerateResource.cache
+C:\Users\user\Documents\GitHub\WhatWatch\WhatWatch\WhatWatch\obj\Debug\WhatWatch.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\WhatWatch\WhatWatch\WhatWatch\obj\Debug\WhatWatch.exe
+C:\Users\user\Documents\GitHub\WhatWatch\WhatWatch\WhatWatch\obj\Debug\WhatWatch.pdb
