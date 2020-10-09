@@ -29,13 +29,15 @@ namespace WhatWatch
 
         private void but_random_Click(object sender, EventArgs e)
         {
-            //List<string> tex_list = new List<string>()
-            //string[] myLines = ParkingTimes.ToArray();
 
-            //string[] myLines = textbox.text.SplitParkingTimes.ToArray()
             //convert textbox per line to an array
             string[] array_tex_list = tex_list.Text.Split('\n');
-            tex_out.Text = array_tex_list
+            //new random
+            Random random = new Random();
+            //random index
+            int randomIndex = random.Next(0, array_tex_list.Length);
+            //output array value
+            tex_out.Text = array_tex_list[randomIndex];
         }
     }
 }
