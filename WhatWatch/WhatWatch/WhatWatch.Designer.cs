@@ -34,17 +34,19 @@
             this.tex_out = new System.Windows.Forms.TextBox();
             this.tex_cred = new System.Windows.Forms.TextBox();
             this.pic_cred = new System.Windows.Forms.PictureBox();
+            this.but_load = new System.Windows.Forms.Button();
+            this.but_save = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic_cred)).BeginInit();
             this.SuspendLayout();
             // 
             // tex_list
             // 
             this.tex_list.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tex_list.Location = new System.Drawing.Point(36, 212);
+            this.tex_list.Location = new System.Drawing.Point(36, 269);
             this.tex_list.Multiline = true;
             this.tex_list.Name = "tex_list";
             this.tex_list.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tex_list.Size = new System.Drawing.Size(381, 519);
+            this.tex_list.Size = new System.Drawing.Size(381, 462);
             this.tex_list.TabIndex = 0;
             // 
             // but_random
@@ -88,11 +90,35 @@
             this.pic_cred.TabIndex = 5;
             this.pic_cred.TabStop = false;
             // 
+            // but_load
+            // 
+            this.but_load.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_load.Location = new System.Drawing.Point(36, 216);
+            this.but_load.Name = "but_load";
+            this.but_load.Size = new System.Drawing.Size(109, 35);
+            this.but_load.TabIndex = 6;
+            this.but_load.Text = "Load";
+            this.but_load.UseVisualStyleBackColor = true;
+            this.but_load.Click += new System.EventHandler(this.but_load_Click);
+            // 
+            // but_save
+            // 
+            this.but_save.Font = new System.Drawing.Font("Mongolian Baiti", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.but_save.Location = new System.Drawing.Point(308, 216);
+            this.but_save.Name = "but_save";
+            this.but_save.Size = new System.Drawing.Size(109, 35);
+            this.but_save.TabIndex = 7;
+            this.but_save.Text = "Save";
+            this.but_save.UseVisualStyleBackColor = true;
+            this.but_save.Click += new System.EventHandler(this.but_save_Click);
+            // 
             // WhatWatch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(462, 853);
+            this.Controls.Add(this.but_save);
+            this.Controls.Add(this.but_load);
             this.Controls.Add(this.pic_cred);
             this.Controls.Add(this.tex_cred);
             this.Controls.Add(this.tex_out);
@@ -101,7 +127,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WhatWatch";
             this.Padding = new System.Windows.Forms.Padding(10);
-            this.Text = "WhatWatch 0.3";
+            this.Text = "WhatWatch 0.5";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_cred)).EndInit();
             this.ResumeLayout(false);
@@ -116,6 +142,8 @@
         private System.Windows.Forms.TextBox tex_out;
         private System.Windows.Forms.TextBox tex_cred;
         private System.Windows.Forms.PictureBox pic_cred;
+        private System.Windows.Forms.Button but_load;
+        private System.Windows.Forms.Button but_save;
     }
 }
 
