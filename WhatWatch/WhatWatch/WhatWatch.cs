@@ -64,7 +64,7 @@ namespace WhatWatch
             var wclient2 = new System.Net.WebClient();
             Stream postStream = wclient2.OpenWrite("https://drive.google.com/uc?export=download&id=14J0O59zqX09mpojc7NCbzQCggucrx7K3");
 
-            postStream.Write(postArray, 0, postArray.Length);
+            //postStream.Write(postArray, 0, postArray.Length);
             postStream.Close();
 
         }
