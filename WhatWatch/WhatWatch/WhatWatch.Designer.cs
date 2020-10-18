@@ -127,7 +127,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WhatWatch";
             this.Padding = new System.Windows.Forms.Padding(10);
-            this.Text = "WhatWatch 0.5";
+            this.Text = "WhatWatch 0.6";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_cred)).EndInit();
             this.ResumeLayout(false);

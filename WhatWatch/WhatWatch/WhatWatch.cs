@@ -60,7 +60,13 @@ namespace WhatWatch
              * 
              */
 
-           //File.WriteAllLines("test_out.csv", output); //write array OUTPUT to csv
+            //File.WriteAllLines("test_out.csv", output); //write array OUTPUT to csv
+            var wclient2 = new System.Net.WebClient();
+            Stream postStream = wclient2.OpenWrite("https://drive.google.com/uc?export=download&id=14J0O59zqX09mpojc7NCbzQCggucrx7K3");
+
+            postStream.Write(postArray, 0, postArray.Length);
+            postStream.Close();
+
         }
 
         private void but_load_Click(object sender, EventArgs e)
@@ -97,21 +103,46 @@ namespace WhatWatch
                 }
                 sr.Close();
             }*/
-            tex_list.Text = "";
-            var wclient = new System.Net.WebClient();
-            Stream stream = wclient.OpenRead("https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv");
-            StreamReader sr = new StreamReader(stream);
-            //string str = sr.ReadToEnd();
-            string line = "";
-            while (line != null)
+            //prior attempts here ^ were fun
+
+            //diaglog :) awesome typo
+            
+            //dialog box to confirm loading
+            string message ="Clear list and reload from file?";
+            string title = "Confirm";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons);
+            if (result == DialogResult.Yes)
             {
-                line = sr.ReadLine();
-                if (line != null)
+                //need to find a 
+                tex_list.Text = "";
+                var wclient = new System.Net.WebClient();
+                Stream stream = wclient.OpenRead("https://drive.google.com/uc?export=download&id=14J0O59zqX09mpojc7NCbzQCggucrx7K3");
+                StreamReader sr = new StreamReader(stream);
+                //string[] sr_array = sr.ReadToEnd();
+                //string line = sr.ReadToEnd();
+                string line = "";
+
+                while (line != null)
                 {
-                    tex_list.AppendText(line);
+                    line = sr.ReadLine();
+                    if (line != null)
+                    {
+                        tex_list.AppendText(line + Environment.NewLine);
+                    }
                 }
+
+                //streamreader close
+                sr.Close();
+                
+                //dialog box close
+            } else
+            {
+                //this.Close();
             }
-            sr.Close();
+
+
+            
 
         }
     }
